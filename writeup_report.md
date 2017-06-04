@@ -34,7 +34,7 @@ My pipeline consists of 5 steps.
   
   - Applied the helper function grayscale on the image.
   
-  <p align="center"><img src="./my_examples/gray.jpg" width="500"></p>
+  <p align="center"><img src="./my_examples/grayscale.jpg" width="500"></p>
   
   - Smoothed the image using the Gaussian Blur function on the image using a Kernel Size of 5x5 
   - Detected the image's edges using the Canny Edge Detection function, with a ratio of 1:2 through a low_threshold @ 100 and a
@@ -57,7 +57,7 @@ My pipeline consists of 5 steps.
   
   - Merged the lines drawn and input image using the weighted image function.
   
-  <p align="center"><img src="./my_examples/final.jpg" width="500"></p>
+  <p align="center"><img src="./my_examples/lanes.jpg" width="500"></p>
   
 
 ![alt text][image1]
