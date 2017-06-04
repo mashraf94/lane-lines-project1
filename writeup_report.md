@@ -30,7 +30,7 @@ My pipeline consists of 5 steps.
 ---
   - Took a copy of the image, to avoid affecting the input image.
   
-  <img src="./my_examples/whiteCarLaneSwitch.jpg" width="500">
+  <div style="text-align:center"><img src="./my_examples/whiteCarLaneSwitch.jpg" width="500"></div>
   
   - Applied the helper function grayscale on the image.
   
