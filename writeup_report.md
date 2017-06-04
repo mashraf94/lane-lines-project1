@@ -15,7 +15,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[gray]: ./my_examples/grayscale.jpg "Grayscale"
+[blur]: ./my_examples/gaussian_blur.jpg "Gaussian Blur"
+[edges]: ./my_examples/edges.jpg "Canny Edge Detection"
+[mask]: ./my_examples/mask.jpg "Specified Region"
+[initial]: ./my_examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch initial state"
+[final]: ./my_examples/lanes.jpg "whiteCarLaneSwitch w/ Lane Detection"
 
 ---
 
@@ -24,6 +29,7 @@ The goals / steps of this project are the following:
 My pipeline consists of 5 steps. 
 ---
   - Took a copy of the image, to avoid affecting the input image.
+  ![alt text][initial] 
   - Applied the helper function grayscale on the image.
   - Smoothed the image using the Gaussian Blur function on the image using a Kernel Size of 5x5 
   - Detected the image's edges using the Canny Edge Detection function, with a ratio of 1:2 through a low_threshold @ 100 and a
@@ -35,7 +41,7 @@ My pipeline consists of 5 steps.
       * The points were filtered to two seperate arrays representing the left and the right lanes by dividing the lines on the left               of the image and on the right.
       * Furthermore, I had to use a slope filter to avoid anypoints that might be included within the mask perimeter but aren't lane               lines.
           - For Example: In the challenge video, the car hood disturbed the lines drastically due to lines detected with slopes = 0.
-      * The functions polyfit, poly1d and polylines were used to use the lines set as the left and right lane, to get a fit for these lines, create a function of the first degree for the fitting line, and draw this line across the left and right lanes. 
+      * The functions polyfit, poly1d and polylines were used to get a fitting set of points for the lines set as the left and right lane, create a function of the first degree for the fitting points, and draw a line across the points specifying the left and right lanes. 
   - Merged the lines drawn and input image using the weighted image function.
 
 ![alt text][image1]
