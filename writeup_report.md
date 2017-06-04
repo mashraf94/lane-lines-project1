@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 My pipeline consists of 5 steps. 
 ---
   - Took a copy of the image, to avoid affecting the input image.
-  ![alt text][initial] 
+  [initial] 
   - Applied the helper function grayscale on the image.
   - Smoothed the image using the Gaussian Blur function on the image using a Kernel Size of 5x5 
   - Detected the image's edges using the Canny Edge Detection function, with a ratio of 1:2 through a low_threshold @ 100 and a
