@@ -29,13 +29,16 @@ The goals / steps of this project are the following:
 My pipeline consists of 5 steps. 
 ---
   - Took a copy of the image, to avoid affecting the input image.
-  [initial] 
+  ![alt text][initial] 
   - Applied the helper function grayscale on the image.
+  ![alt text][gray]
   - Smoothed the image using the Gaussian Blur function on the image using a Kernel Size of 5x5 
   - Detected the image's edges using the Canny Edge Detection function, with a ratio of 1:2 through a low_threshold @ 100 and a
       high threshold @ 200.
+      ![alt text][edges]
   - Constructed a polygon mask for every image by determining 4 vertices across the image. Using approximate ratios with respect to
       the image's specific dimensions calculated by variables xsize & ysize.
+      ![alt text][mask]
   - Transformed the masked part of the image to a Hough Space, using the Hough Lines function, determining the lines connecting the            Edge points previously collected through the Canny function. These lines were filtered according to several parameters which              took a lot of trials and logic to determine, including: the vote threshold of line intersections in a single grid space, the              minimum line length and maximum line gap.
   - These lines are passed to the draw_lines function to be drawn on a blank image with the same dimensions as the input, which was completely rewritten.
       * The points were filtered to two seperate arrays representing the left and the right lanes by dividing the lines on the left               of the image and on the right.
@@ -43,6 +46,7 @@ My pipeline consists of 5 steps.
           - For Example: In the challenge video, the car hood disturbed the lines drastically due to lines detected with slopes = 0.
       * The functions polyfit, poly1d and polylines were used to get a fitting set of points for the lines set as the left and right lane, create a function of the first degree for the fitting points, and draw a line across the points specifying the left and right lanes. 
   - Merged the lines drawn and input image using the weighted image function.
+  ![alt text][final]
 
 ![alt text][image1]
 
