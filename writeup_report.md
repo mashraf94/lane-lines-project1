@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [blur]: ./my_examples/gaussian_blur.jpg "Gaussian Blur"
 [edges]: ./my_examples/edges.jpg "Canny Edge Detection"
 [mask]: ./my_examples/mask.jpg "Specified Region"
-[initial]: ./my_examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch initial state"
+[initial]: ./my_examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch initial state" {: height="36px" width="36px"}
 [final]: ./my_examples/lanes.jpg "whiteCarLaneSwitch w/ Lane Detection"
 
 ---
