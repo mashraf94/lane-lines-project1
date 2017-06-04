@@ -1,32 +1,10 @@
 # **Finding Lane Lines on the Road** 
-
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Finding Lane Lines on the Road**
-
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
-[//]: # (Image References)
-
-[gray]: ./my_examples/grayscale.jpg "Grayscale"
-[blur]: ./my_examples/gaussian_blur.jpg "Gaussian Blur"
-[edges]: ./my_examples/edges.jpg "Canny Edge Detection"
-[mask]: ./my_examples/mask.jpg "Specified Region"
-[initial]: ./my_examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch initial state"
-[final]: ./my_examples/lanes.jpg "whiteCarLaneSwitch w/ Lane Detection"
-
 ---
 
 ### Reflection
 
-My pipeline consists of 5 steps. 
+###### The proposed pipeline consists of 8 steps:
+*The whiteCarLaneSwitch image is used throughout this brief description of the pipeline to resemble each step.*
 ---
   - Took a copy of the image, to avoid affecting the input image.
   
@@ -55,24 +33,25 @@ My pipeline consists of 5 steps.
           - For Example: In the challenge video, the car hood disturbed the lines drastically due to lines detected with slopes = 0.
       * The functions polyfit, poly1d and polylines were used to get a fitting set of points for the lines set as the left and right lane, create a function of the first degree for the fitting points, and draw a line across the points specifying the left and right lanes. 
   
-  - Merged the lines drawn and input image using the weighted image function.
+  - Merged the lines drawn and input image together using the weighted image function, to display the drawn lanes marked by *the red lines* on the input image.
   
   <p align="center"><img src="./my_examples/lanes.jpg" width="500"></p>
   
+### Potential Shortcomings
 
-![alt text][image1]
-
-
-### 2. Identify potential shortcomings with your current pipeline
-
+The pipeline proposed might have several shortcomings:
+	i. Inaccuracy under certain conditions
+		a. Extremely high or low lighting.
+		b. Shadows
+		c. Different cameras, and captured portions of the car (eg:. the hood)
+		d. Urban Traffic with really close pedestrians or other vehichles.
+		All these conditions would cause a great distortion in the pipeline's algorithm since it detects the lines available in a specified infront of the car, and it might be sensitive.
+	ii. 
 
 One potential shortcoming would be what would happen when ... 
 
 Another shortcoming could be ...
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible Improvements
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
