@@ -3,9 +3,9 @@
 
 ### Reflection
 
-##### The proposed pipeline consists of 8 steps:
----
-*The whiteCarLaneSwitch image is used throughout this brief description of the pipeline to resemble each step.*
+The proposed pipeline consists of 8 steps:
+
+##### *The whiteCarLaneSwitch image is used throughout this brief description of the pipeline to resemble each step.*
 
   - Took a copy of the image, to avoid affecting the input image.
   
@@ -41,13 +41,14 @@
 ### Potential Shortcomings
 
 The pipeline proposed might have several shortcomings:
-	i. Inaccuracy under certain conditions
-		a. Extremely high or low lighting.
-		b. Shadows
-		c. Different cameras, and captured portions of the car (eg:. the hood)
-		d. Urban Traffic with really close pedestrians or other vehichles.
+		i. Inaccuracy under certain conditions
+		    a. Extremely high or low lighting.
+				b. Shadows
+				c. Different cameras, and captured portions of the car (eg:. the hood)
+				d. Urban Traffic with really close pedestrians or other vehichles.
 		All these conditions would cause a great distortion in the pipeline's algorithm since it detects the lines available in a specified infront of the car, and it might be sensitive.
-	ii. 
+		
+		ii. 
 
 One potential shortcoming would be what would happen when ... 
 
