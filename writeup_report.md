@@ -44,10 +44,9 @@ The pipeline proposed might have several shortcomings:
   1. Inaccuracy under certain conditions
       1. Extremely high or low lighting.
       2. Shadows
-      3. Different cameras, and captured portions of the car (eg:. the hood)
+      3. Different cameras, and captured portions of the car (eg:. the car's front hood)
       4. Urban Traffic with really close pedestrians or other vehichles.
-      All these conditions would cause a great distortion in the pipeline's algorithm since it detects the lines available in a specified
-      infront of the car, and it might be sensitive.
+   * All these conditions would cause a great distortion in the pipeline's algorithm since it detects the lines available in a specified region infront of the car, and it might be sensitive.
   2. 
 
 One potential shortcoming would be what would happen when ... 
