@@ -20,7 +20,6 @@ The goals / steps of this project are the following:
 [edges]: ./my_examples/edges.jpg "Canny Edge Detection"
 [mask]: ./my_examples/mask.jpg "Specified Region"
 [initial]: ./my_examples/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch initial state"
-<img src="./my_examples/whiteCarLaneSwitch.jpg" width="48">
 [final]: ./my_examples/lanes.jpg "whiteCarLaneSwitch w/ Lane Detection"
 
 ---
@@ -31,8 +30,7 @@ My pipeline consists of 5 steps.
 ---
   - Took a copy of the image, to avoid affecting the input image.
   
-  ![alt text][initial]
-  <img src="./my_examples/whiteCarLaneSwitch.jpg" width="48">
+  ![alt text]<img src="./my_examples/whiteCarLaneSwitch.jpg" width="100">
   
   - Applied the helper function grayscale on the image.
   
