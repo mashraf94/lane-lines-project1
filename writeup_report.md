@@ -3,9 +3,10 @@
 
 ### Reflection
 
-###### The proposed pipeline consists of 8 steps:
-*The whiteCarLaneSwitch image is used throughout this brief description of the pipeline to resemble each step.*
+##### The proposed pipeline consists of 8 steps:
 ---
+*The whiteCarLaneSwitch image is used throughout this brief description of the pipeline to resemble each step.*
+
   - Took a copy of the image, to avoid affecting the input image.
   
   <p align="center"><img src="./my_examples/whiteCarLaneSwitch.jpg" width="500"></p>
