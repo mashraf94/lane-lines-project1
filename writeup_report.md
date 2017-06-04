@@ -29,9 +29,7 @@ The goals / steps of this project are the following:
 My pipeline consists of 5 steps. 
 ---
   - Took a copy of the image, to avoid affecting the input image.
-  ![test image size][initial]{:class="img-responsive"}
-  ![test image size][initial]{:height="50%" width="50%"}
-  ![test image size][initial]{:height="700px" width="400px"}
+  
   ![alt text][initial]
   
   - Applied the helper function grayscale on the image.
