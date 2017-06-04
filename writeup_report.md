@@ -42,12 +42,12 @@ The proposed pipeline consists of 8 steps:
 
 The pipeline proposed might have several shortcomings:
   1. Inaccuracy under certain conditions
-    i. Extremely high or low lighting.
-    b. Shadows
-    c. Different cameras, and captured portions of the car (eg:. the hood)
-    d. Urban Traffic with really close pedestrians or other vehichles.
-    All these conditions would cause a great distortion in the pipeline's algorithm since it detects the lines available in a specified
-    infront of the car, and it might be sensitive.
+      i. Extremely high or low lighting.
+      ii. Shadows
+      iii. Different cameras, and captured portions of the car (eg:. the hood)
+      iv. Urban Traffic with really close pedestrians or other vehichles.
+      All these conditions would cause a great distortion in the pipeline's algorithm since it detects the lines available in a specified
+      infront of the car, and it might be sensitive.
   2. 
 
 One potential shortcoming would be what would happen when ... 
