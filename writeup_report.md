@@ -34,18 +34,18 @@ My pipeline consists of 5 steps.
   
   - Applied the helper function grayscale on the image.
   
-  ![alt text][gray]
+  <p align="center"><img src="./my_examples/gray.jpg" width="500"></p>
   
   - Smoothed the image using the Gaussian Blur function on the image using a Kernel Size of 5x5 
   - Detected the image's edges using the Canny Edge Detection function, with a ratio of 1:2 through a low_threshold @ 100 and a
       high threshold @ 200.
       
-      ![alt text][edges]
+      <p align="center"><img src="./my_examples/edges.jpg" width="500"></p>
       
   - Constructed a polygon mask for every image by determining 4 vertices across the image. Using approximate ratios with respect to
       the image's specific dimensions calculated by variables xsize & ysize.
       
-      ![alt text][mask]
+      <p align="center"><img src="./my_examples/mask.jpg" width="500"></p>
       
   - Transformed the masked part of the image to a Hough Space, using the Hough Lines function, determining the lines connecting the            Edge points previously collected through the Canny function. These lines were filtered according to several parameters which              took a lot of trials and logic to determine, including: the vote threshold of line intersections in a single grid space, the              minimum line length and maximum line gap.
   
@@ -57,7 +57,7 @@ My pipeline consists of 5 steps.
   
   - Merged the lines drawn and input image using the weighted image function.
   
-  ![alt text][final]
+  <p align="center"><img src="./my_examples/final.jpg" width="500"></p>
   
 
 ![alt text][image1]
