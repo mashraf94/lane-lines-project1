@@ -40,19 +40,15 @@ The proposed pipeline consists of 8 steps:
   
 ### Potential Shortcomings
 
-The pipeline proposed might have several shortcomings:
-  1. Inaccuracy under certain conditions
-      1. Extremely high or low lighting.
-      2. Shadows
-      3. Different cameras, and captured portions of the car (eg:. the car's front hood)
-      4. Urban Traffic with really close pedestrians or other vehichles.
-   * All these conditions would cause a great distortion in the pipeline's algorithm since it detects the lines available in a specified region infront of the car, and it might be sensitive.
-  2. 
+The pipeline proposed might have several shortcomings, which would cause indecisiveness in determining the lanes.  
+These shortcomings might occur under certain conditions:  
+  1. Extremely high or low lighting.
+  2. Shadows
+  3. Different cameras, and captured portions of the car (eg:. the car's front hood)
+  4. Urban Traffic with really close pedestrians or other vehichles.
+  
+  * All these conditions would might cause a distortion in the pipeline's algorithm since it detects the lines available in a specified region infront of the car, and it might be inaccurate.
 
-One potential shortcoming would be what would happen when ... 
+### Possible Improvements
 
-Another shortcoming could be ...
-
-
-### 3. Possible Improvements
-
+Ofcourse, this algorithm needs a lot of improvement, one of the ways is using machine learning to know where the lanes are, instead of hard coding the ratios determining the region of interest. Moreover, we could use convolutional neural networks to detect more precisely the lane location.
