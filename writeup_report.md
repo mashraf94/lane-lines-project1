@@ -30,6 +30,7 @@ My pipeline consists of 5 steps.
 ---
   - Took a copy of the image, to avoid affecting the input image.
   ![alt text][initial] 
+  ![test image size][initial]{:height="50%" width="50%"}
   - Applied the helper function grayscale on the image.
   ![alt text][gray]
   - Smoothed the image using the Gaussian Blur function on the image using a Kernel Size of 5x5 
